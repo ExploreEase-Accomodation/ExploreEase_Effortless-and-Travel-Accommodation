@@ -1,12 +1,14 @@
 import { useState } from 'react'
 
 import './App.css'
+import Home from './Components/Home'
 
 function App() {
 
   return (
     <>
-      <h1>Hey This is major project</h1>
+     <Home/>
+   
     </>
   )
 }
