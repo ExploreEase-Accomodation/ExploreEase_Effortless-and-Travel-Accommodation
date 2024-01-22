@@ -1,16 +1,21 @@
-import { useState } from 'react'
+import React from "react";
+import Navbar from "./Components/Navbar";
 
-import './App.css'
-import Home from './Components/Home'
+import { Outlet } from "react-router-dom";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 
-function App() {
-
+const App = () => {
   return (
     <>
-     <Home/>
-   
-    </>
-  )
-}
+      <Navbar />
+      <Header />
 
-export default App
+      <Outlet />
+
+      <Footer />
+    </>
+  );
+};
+
+export default App;

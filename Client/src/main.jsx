@@ -1,10 +1,41 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromChildren,
+  createRoutesFromElements,
+} from "react-router-dom";
+import About from "./Components/About.jsx";
+import Services from "./Components/Services.jsx";
+import Hotel from "./Components/Bookings/Hotel.jsx";
+import Flight from "./Components/Bookings/Flight.jsx";
+import Bus from "./Components/Bookings/Bus.jsx";
+import Train from "./Components/Bookings/Train.jsx";
+import MorDes from "./Components/Bookings/MoreDes.jsx";
+import Container from "./Components/Container.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter(
+  createRoutesFromChildren(
+    <Route path="/" element={<App />}>
+      <Route path="" element={<Container />} />
+
+      <Route path="hotel" element={<Hotel />} />
+      <Route path="flight" element={<Flight />} />
+      <Route path="train" element={<Train />} />
+      <Route path="bus" element={<Bus />} />
+      <Route path="more" element={<MorDes />} />
+
+      <Route path="about" element={<About />}></Route>
+      <Route path="services" element={<Services />}></Route>
+    </Route>
+  )
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
