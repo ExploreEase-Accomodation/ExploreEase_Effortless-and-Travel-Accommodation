@@ -1,16 +1,68 @@
-import { useState } from 'react'
+// import React from "react";
+// import Navbar from './Components/Navbar'
+// import Header from './Components/Header'
 
-import './App.css'
-import Home from './Components/Home'
+// import { Outlet } from 'react-router-dom'
+// import Footer from "./Components/Footer";
 
-function App() {
-
-  return (
-    <>
-     <Home/>
+// const App = () => {
+//   return (
    
-    </>
-  )
-}
+//      <>
+//       <Navbar/>
+//       <Header/>
 
-export default App
+//       <Outlet/>
+
+//       <Footer/>
+
+
+
+//      </>
+//   );
+// };
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // import React from 'react'
+
+// // // import './App.css'
+// // import Home from './Components/Home'
+
+// // function App() {
+
+// //   return (
+// //     <>
+// //      <Home/>
+   
+// //     </>
+// //   )
+// // }
+
+// // export default App
+
+
+
+
+
