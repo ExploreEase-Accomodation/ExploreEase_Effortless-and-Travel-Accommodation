@@ -1,40 +1,77 @@
-import React from 'react'
-import CarouselItem from './CarouselItem'
+import React, { useState, useEffect } from "react";
+import { CarouselItem } from "./CarouselItem";
+import "./Carousel.css";
+import image1 from "../Media/image1.jpg";
+import image2 from "../Media/image2.jpg";
+import image3 from "../Media/image3.jpg";
+import next from "../Media/right-arrow.png";
+import prev from "../Media/left-arrow.png";
 
-const Carousel = () => {
-  const items =[
+export const Carousel = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const items = [
     {
-     title:"abc",
-      description:"hello hello",
-      icon : require("./Media/undraw_undraw_undraw_undraw_undraw_completion_progress_1oxr_gag2_-1-_0h44_-1-_vov5_-1-_1amu.svg")
+      title: "Baseball",
+      description: "",
+      icon: image1,
     },
     {
-      title:"deg",
-       description:"hello hello2",
-       icon : require("./Media/undraw_undraw_undraw_undraw_undraw_completion_progress_1oxr_gag2_-1-_0h44_-1-_vov5_-1-_1amu.svg")
-     },
-     {
-      title:"Hij",
-       description:"hello hello3",
-       icon : require("./Media/undraw_undraw_undraw_undraw_undraw_completion_progress_1oxr_gag2_-1-_0h44_-1-_vov5_-1-_1amu.svg")
-     }
-
+      title: "Walking",
+      description: "",
+      icon: image2,
+    },
+    {
+      title: "Weights",
+      description: "",
+      icon: image3,
+    },
   ];
-  return (
-    <>
-    <div className="carousel">
-      <div className="inner">
-        {items.map((item)=>{
-          return (
-    <CarouselItem item={item}/>
+  const updateIndex = (newIndex) => {
+    if (newIndex < 0) {
+      newIndex = 0;
+    } else if (newIndex >= items.length) {
+      newIndex = items.length - 1;
+    }
+    setActiveIndex(newIndex);
+  };
 
-          )  
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
+      }, 3500);
+      return () => clearInterval(intervalId);
+    }, [activeIndex, items.length]);
+
+
+  return (
+    <div className="carousel">
+      <div
+        className="inner"
+        style={{ transform: `translate(-${activeIndex * 100}%)` }}
+      >
+        {items.map((item) => {
+          return <CarouselItem item={item} width={"100%"} />;
         })}
       </div>
 
+      <div className="carousel-buttons">
+        <button
+          className="arrow-prev"
+          onClick={() => {
+            updateIndex(activeIndex - 1);
+          }}
+        >
+          <span class="material-symbols-outlined"><img src={next} className="next" alt="next"/></span>{" "}
+        </button>
+        <button
+          className="arrow-next"
+          onClick={() => {
+            updateIndex(activeIndex + 1);
+          }}
+        >
+          <span class=""><img src={prev} className="prev" alt="prev"/></span>
+        </button>
+      </div>
     </div>
-    </>
-  )
-}
-
-export default Carousel
+  );
+};
