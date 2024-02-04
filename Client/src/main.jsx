@@ -16,26 +16,25 @@ import Train from "./Components/Bookings/Train.jsx";
 import MorDes from "./Components/Bookings/MoreDes.jsx";
 import Container from "./Components/Container.jsx";
 import Login from "./FormControl/Login.jsx";
+import Contact from "./Components/Contact.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromChildren(
 
     <React.Fragment>
+     <Route path="login" element={<Login />}></Route>
+
+    
+    <Route path="/" element={<App />}>
+      <Route path="" element={<Container />} />
+
+    
       <Route path="/login" element={<Login/>}/>
 
-        <Route path="/" element={<App />}>
-          <Route path="" element={<Container />} />
-
-          <Route path="hotel" element={<Hotel />} />
-          <Route path="flight" element={<Flight />} />
-          <Route path="train" element={<Train />} />
-          <Route path="bus" element={<Bus />} />
-          <Route path="more" element={<MorDes />} />
-
-          <Route path="about" element={<About />}></Route>
-          <Route path="services" element={<Services />}></Route>
-        </Route>
-
+      <Route path="about" element={<About />}></Route>
+      <Route path="services" element={<Services />}></Route>      
+      <Route path="contact" element={<Contact />}></Route>      
+    </Route>
     </React.Fragment>
   )
 );

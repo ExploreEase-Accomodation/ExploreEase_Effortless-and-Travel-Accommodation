@@ -1,6 +1,6 @@
 
 #header{
-  height: 6.5rem;
+  height: 8.5rem;
   left: 0;
   top: 0;
   right: 0;
@@ -11,14 +11,18 @@
   z-index: 1000;
   opacity: 1;
   padding: 2rem 9%;
-  box-shadow: var(--box-shadow);
   margin-top: 1rem;
+  box-shadow:0 .5rem 1.5rem rgba(56, 7, 171, 0.1);
+
   
   
 
 
 }
-
+.icon{
+    height: 3rem;
+    
+}
 
 #header ul{
 	display: flex;
@@ -26,24 +30,24 @@
 
 }
 
-#header ul li{
-	font-size: 1.2rem;
-    justify-content: space-between;
-
+.nav-link{
+    color: gray;
+    margin-left: .3rem;
 }
 
-
-
-#header ul li a{
-	color: gray;
+#header ul li {
+	font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 	font-size: 1.7rem;
 	padding: 2rem;
     left: 0;
+    
 
 }
 
-
-#header ul li a:hover{
+#header ul li :hover{
 color: orange;
 background: #fff;
 

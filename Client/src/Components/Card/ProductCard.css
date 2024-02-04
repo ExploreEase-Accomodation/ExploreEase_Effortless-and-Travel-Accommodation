@@ -1,0 +1,35 @@
+
+#Product-Container{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100%;
+
+   box-shadow: var(--box-shadow); 
+
+
+
+}
+
+.Product-Card{
+   display: flex;
+   height: 50rem;
+   width: 30rem;
+   justify-content: center;
+   box-shadow: var(--box-shadow);
+   margin: 2rem;
+   
+}
+.Product-Content{
+   
+   text-align: center;
+   padding: 1rem;
+
+}
+.Product-Content h3{
+   margin-top: 2rem;
+
+}
+
+

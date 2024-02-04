@@ -2,12 +2,14 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   return (
     <nav id="navbar">
       <Link to="/" className="logo">
         <i className="fas fa-shopping-basket"></i>
-        <span>ExploreEase.</span>
+        <div>Explore<span>Ease.</span>
+        </div>
       </Link>
 
       <ul>
@@ -27,7 +29,7 @@ const Navbar = () => {
 
       <div className="logsign">
         <button type="button" className="btn">
-          Login
+          <Link to="/login">Login</Link>
         </button>
         <button type="button" className="btn">
           Signin

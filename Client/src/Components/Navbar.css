@@ -62,6 +62,9 @@ html{
   opacity: 1;
   padding: 2rem 9%;
   box-shadow: var(--box-shadow);
+  background-image:linear-gradient( 
+                to right, #207b99, #00ffd5); 
+                
 
 
 
@@ -83,16 +86,16 @@ html{
 
 
 #navbar ul li a{
-	color: gray;
+	color: white;
 	font-size: 1.7rem;
 	padding: .8rem;
+    font-weight: bolder;
 
 }
 
 
 #navbar ul li a:hover{
-color: orange;
-background: #fff;
+color: rgb(213, 168, 83);
 
 	
 }
@@ -100,7 +103,7 @@ background: #fff;
 
 
 .btn:hover{
-    background: var(--orange);
+    background-color: rgb(202, 161, 84);
     color:#fff;
 }
 
@@ -113,3 +116,4 @@ background: #fff;
     padding: .6rem 2rem;
     
 }
+
