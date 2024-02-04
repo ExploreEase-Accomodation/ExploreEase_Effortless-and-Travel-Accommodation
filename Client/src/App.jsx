@@ -1,68 +1,21 @@
-// import React from "react";
-// import Navbar from './Components/Navbar'
-// import Header from './Components/Header'
+import React from "react";
+import Navbar from "./Components/Navbar";
 
-// import { Outlet } from 'react-router-dom'
-// import Footer from "./Components/Footer";
+import { Outlet } from "react-router-dom";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 
-// const App = () => {
-//   return (
-   
-//      <>
-//       <Navbar/>
-//       <Header/>
+const App = () => {
+  return (
+    <>
+      <Navbar />
+      <Header />
 
-//       <Outlet/>
+      <Outlet />
 
-//       <Footer/>
+      <Footer />
+    </>
+  );
+};
 
-
-
-//      </>
-//   );
-// };
-
-// export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // import React from 'react'
-
-// // // import './App.css'
-// // import Home from './Components/Home'
-
-// // function App() {
-
-// //   return (
-// //     <>
-// //      <Home/>
-   
-// //     </>
-// //   )
-// // }
-
-// // export default App
-
-
-
-
-
+export default App;

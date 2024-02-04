@@ -46,4 +46,11 @@
   background-color: red;
   height: 100vh;
   width: 100wh;
-} */
+}
+.navbar
+{
+
+  display:flex;
+  height: 4rem;
+  width: 100%;
+}
