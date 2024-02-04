@@ -26,8 +26,8 @@ const Navbar = () => {
       </ul>
 
       <div className="logsign">
-        <button type="button" className="btn">
-          Login
+        <button type="button" className="btn"><Link to='/login'>Login</Link>
+        
         </button>
         <button type="button" className="btn">
           Signin
