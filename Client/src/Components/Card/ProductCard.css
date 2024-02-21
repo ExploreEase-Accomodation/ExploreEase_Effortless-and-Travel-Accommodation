@@ -1,24 +1,20 @@
 
 #Product-Container{
-    display: flex;
-    align-items: center;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   align-items: center;
    justify-content: center;
-   height: 100vh;
    width: 100%;
-
    box-shadow: var(--box-shadow); 
-
-
 
 }
 
 .Product-Card{
    display: flex;
-   height: 50rem;
-   width: 30rem;
    justify-content: center;
    box-shadow: var(--box-shadow);
-   margin: 2rem;
+   margin: 2rem;   
+   padding: 0 0 5rem 0;
    
 }
 .Product-Content{
@@ -32,4 +28,10 @@
 
 }
 
+.Product-Card{
 
+}
+
+.img{
+   height: 20rem;
+}

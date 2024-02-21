@@ -67,7 +67,7 @@ background: #fff;
 }
 
 .btn:hover{
-    background: var(--orange);
+    background: rgb(173, 114, 45);
     color:#fff;
 }
 

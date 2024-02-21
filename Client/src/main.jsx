@@ -7,6 +7,7 @@ import {
   createBrowserRouter,
   createRoutesFromChildren,
   createRoutesFromElements,
+
 } from "react-router-dom";
 import About from "./Components/About.jsx";
 import Services from "./Components/Services.jsx";
@@ -18,12 +19,14 @@ import MorDes from "./Components/Bookings/MoreDes.jsx";
 import Container from "./Components/Container.jsx";
 import Login from "./FormControl/Login.jsx";
 import Contact from "./Components/Contact.jsx";
+import Signup from "./FormControl/Signup.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromChildren(
 
     <React.Fragment>
      <Route path="login" element={<Login />}></Route>
+     <Route path="signup" element={<Signup />}></Route>
 
     
     <Route path="/" element={<App />}>
