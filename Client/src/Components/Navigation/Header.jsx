@@ -15,22 +15,32 @@ const Header = () => {
         <ul>
           <li>
             <img src={hotel} className="icon" alt="hotel" />
-            <Link to="/hotel"><span className="nav-link">Hotels</span></Link>
+            <Link to="/hotel">
+              <span className="nav-link">Hotels</span>
+            </Link>
           </li>
           <li>
             <img src={flight} className="icon" alt="flight" />
-            <Link to="/flight"><span className="nav-link">Flight</span></Link>
+            <Link to="/flight">
+              <span className="nav-link">Flight</span>
+            </Link>
           </li>
           <li>
             <img src={train} className="icon" alt="train" />
-            <Link to="/train"><span className="nav-link"> Trains</span></Link>
+            <Link to="/train">
+              <span className="nav-link"> Trains</span>
+            </Link>
           </li>
           <li>
             <img src={bus} className="icon" alt="bus" />
-            <Link to="/bus"><span className="nav-link">Bus</span></Link>
+            <Link to="/bus">
+              <span className="nav-link">Bus</span>
+            </Link>
           </li>
           <li>
-            <Link to="/more"><span className="nav-link">More Destinations..</span></Link>
+            <Link to="/more">
+              <span className="nav-link">More Destinations..</span>
+            </Link>
           </li>
         </ul>
       </nav>

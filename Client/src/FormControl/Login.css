@@ -14,6 +14,9 @@
 
 }
 .login-cart{
+    height: 100vh;
+    background: linear-gradient(to right,#207b99,#00ffd5);
+    display: flex;
 
 }
 .form{
@@ -28,6 +31,7 @@
     margin-top: 3rem;
     box-shadow: var(--box-shadow);
     border-radius: 5px;
+   
 
 }
 p{

@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
 
 import { Outlet } from "react-router-dom";
 import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import Navbar from "./Components/Navigation/Navbar";
+import Header from "./Components/Navigation/Header";
 
 const App = () => {
   return (
