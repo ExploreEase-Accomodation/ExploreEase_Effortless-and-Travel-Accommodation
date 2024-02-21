@@ -2,13 +2,13 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
   return (
     <nav id="navbar">
       <Link to="/" className="logo">
         <i className="fas fa-shopping-basket"></i>
-        <div>Explore<span>Ease.</span>
+        <div>
+          Explore<span>Ease.</span>
         </div>
       </Link>
 
@@ -32,7 +32,7 @@ const Navbar = () => {
           <Link to="/login">Login</Link>
         </button>
         <button type="button" className="btn">
-          Signin
+          <Link to="./signup">Signup</Link>
         </button>
       </div>
     </nav>

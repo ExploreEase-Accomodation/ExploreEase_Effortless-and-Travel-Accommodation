@@ -61,7 +61,7 @@ export const Carousel = () => {
             updateIndex(activeIndex - 1);
           }}
         >
-          <span class="material-symbols-outlined"><img src={next} className="next" alt="next"/></span>{" "}
+          <span className="material-symbols-outlined"><img src={next} className="next" alt="next"/></span>{" "}
         </button>
         <button
           className="arrow-next"
@@ -69,7 +69,7 @@ export const Carousel = () => {
             updateIndex(activeIndex + 1);
           }}
         >
-          <span class=""><img src={prev} className="prev" alt="prev"/></span>
+          <span className=""><img src={prev} className="prev" alt="prev"/></span>
         </button>
       </div>
     </div>
