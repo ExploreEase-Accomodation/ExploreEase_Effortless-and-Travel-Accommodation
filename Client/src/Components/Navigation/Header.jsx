@@ -4,9 +4,9 @@ import "./Header.css";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faHotel, faPlane,faTrain,faBus } from '@fortawesome/free-solid-svg-icons';
 import hotel from "../Media/hotel.jpg";
-import flight from "../Media/travel.png";
 import train from "../Media/train.png";
-import bus from "../Media/bus-school.png";
+import faq from "../Media/faq.png";
+import earth from "../Media/earth.png";
 
 const Header = () => {
   return (
@@ -20,21 +20,21 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <img src={flight} className="icon" alt="flight" />
-            <Link to="/flight">
-              <span className="nav-link">Flight</span>
+            <img src={earth} className="icon" alt="flight" />
+            <Link to="/packages">
+              <span className="nav-link">Packages</span>
             </Link>
           </li>
           <li>
             <img src={train} className="icon" alt="train" />
-            <Link to="/train">
+            <Link to="/trains">
               <span className="nav-link"> Trains</span>
             </Link>
           </li>
           <li>
-            <img src={bus} className="icon" alt="bus" />
-            <Link to="/bus">
-              <span className="nav-link">Bus</span>
+            <img src={faq} className="icon" alt="fqa" />
+            <Link to="/faq">
+              <span className="nav-link">FAQ's</span>
             </Link>
           </li>
           <li>

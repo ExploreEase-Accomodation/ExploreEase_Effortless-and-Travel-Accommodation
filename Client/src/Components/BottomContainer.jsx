@@ -12,13 +12,14 @@ const BottomContainer = () => {
     <>
       <section className="bottom">
         <h1>
-          Explore Your<span className="heading"> Favorite</span> Places !!
+          Explore Your<span className="heading_home"> Favorite</span> Places !!
         </h1>
         <HomeCard homeData={homeData} />
 
         <hr></hr>
         <h1 id="heading2">
-          Few More<span className="heading"> Destinations </span> to Visit !!
+          Few More<span className="heading_home"> Destinations </span> to Visit
+          !!
           {/* Architectural Marvels !! */}
         </h1>
         <HomeCircleCard homeCircleData={homeCircleData} />

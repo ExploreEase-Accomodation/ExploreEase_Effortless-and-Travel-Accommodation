@@ -13,9 +13,9 @@ const Footer = () => {
         {/* <h2> Social Accounts</h2> */}
 
         <div className="footer-img">
-          <img src={facebook} />
-          <img src={Instagram} />
-          <img src={GitHub} />
+          <a href="https://www.facebook.com/sachinkumar.kumar.378537"><img src={facebook} /></a>
+          <a href="https://www.instagram.com/explore_tech_code/"><img src={Instagram} /></a>
+          <a href="https://github.com/ExploreEase-Accomodation/ExploreEase_Effortless-and-Travel-Accommodation"><img src={GitHub} /></a>
           <img src={LinkedIn} />
         </div>
       </div>
@@ -68,7 +68,7 @@ const Footer = () => {
             <li>Sachin Kumar</li>
             <li>Abhijeet Kumar</li>
             <li>(+91)- 8434275032 </li>
-            <li> group@project.com </li>
+            <li> exploreeaseproject@gmail.com </li>
             <li> Mohali, Punjab</li>
           </div>
         </div>
