@@ -3,7 +3,7 @@ import photo1 from '../Media/varanasi.jpg'
 const HomeMenu = [
   {
     id: 1,
-    image: '../images/varanasi.jpg',
+    image: '../images/varanasi2.jpg',
     image2: "../images/varanasi2.jpg",
     name: "Varanasi",
     description:
