@@ -45,12 +45,12 @@ export const Carousel = () => {
 
   return (
     <div className="carousel">
-      <div
+      <div 
         className="inner"
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
       >
-        {items.map((item) => {
-          return <CarouselItem item={item} width={"100%"} />;
+        {items.map((item, index) => {
+          return <CarouselItem key={index} item={item} width={"100%"} />;
         })}
       </div>
 

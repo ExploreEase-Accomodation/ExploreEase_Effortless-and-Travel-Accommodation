@@ -1,0 +1,14 @@
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.profile-details {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
